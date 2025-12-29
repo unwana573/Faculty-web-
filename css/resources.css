@@ -1,0 +1,419 @@
+@import url('style.css');
+
+.page-header {
+    background: linear-gradient(135deg, var(--dark-blue) 0%, var(--darker-blue) 100%);
+    color: var(--white);
+    padding: 60px 20px 40px;
+    position: relative;
+}
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+.breadcrumb a {
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.breadcrumb a:hover {
+    color: var(--primary-color);
+}
+
+.breadcrumb .separator {
+    color: rgba(255,255,255,0.5);
+    font-size: 0.7rem;
+}
+
+.breadcrumb span:last-child {
+    color: var(--white);
+}
+
+.page-title {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.page-subtitle {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    max-width: 700px;
+}
+
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.resource-card {
+    background: var(--white);
+    padding: 40px 35px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    text-align: center;
+    transition: all 0.3s;
+    border: 2px solid transparent;
+}
+
+.resource-card:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.resource-icon {
+    width: 85px;
+    height: 85px;
+    background: linear-gradient(135deg, var(--primary-color), var(--hover-color));
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+    font-size: 2.5rem;
+    color: var(--white);
+    box-shadow: 0 5px 20px rgba(243, 156, 18, 0.3);
+}
+
+.resource-card h3 {
+    font-size: 1.5rem;
+    color: var(--dark-blue);
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.resource-card p {
+    color: var(--text-light);
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.btn-download {
+    background: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 13px 28px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-download:hover {
+    background: var(--hover-color);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(243, 156, 18, 0.3);
+}
+
+.online-resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.online-resource-card {
+    background: var(--white);
+    padding: 35px 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    text-align: center;
+    text-decoration: none;
+    color: var(--text-dark);
+    transition: all 0.3s;
+    position: relative;
+    border: 2px solid transparent;
+    display: block;
+}
+
+.online-resource-card:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.resource-icon-small {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, var(--dark-blue), var(--secondary-color));
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 2rem;
+    color: var(--white);
+}
+
+.online-resource-card h4 {
+    font-size: 1.3rem;
+    color: var(--dark-blue);
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.online-resource-card p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.online-resource-card i.fa-external-link-alt {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: var(--primary-color);
+    font-size: 1rem;
+    transition: transform 0.3s;
+}
+
+.online-resource-card:hover i.fa-external-link-alt {
+    transform: translate(3px, -3px);
+}
+
+.calendar-table {
+    background: var(--white);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.calendar-header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    background: var(--dark-blue);
+    color: var(--white);
+    padding: 20px 35px;
+    font-weight: 600;
+    font-size: 1.05rem;
+}
+
+.calendar-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding: 20px 35px;
+    border-bottom: 1px solid var(--light-gray);
+    transition: all 0.3s;
+    align-items: center;
+}
+
+.calendar-row:hover {
+    background: var(--light-gray);
+    transform: translateX(5px);
+}
+
+.calendar-row:last-child {
+    border-bottom: none;
+}
+
+.event-name {
+    color: var(--text-dark);
+    font-weight: 500;
+    font-size: 1.05rem;
+}
+
+.event-date {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 1.05rem;
+}
+
+.support-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+.support-card {
+    background: var(--white);
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    text-align: center;
+    transition: all 0.3s;
+    border: 2px solid transparent;
+}
+
+.support-card:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.support-card i {
+    font-size: 3.5rem;
+    color: var(--primary-color);
+    margin-bottom: 25px;
+    display: block;
+}
+
+.support-card h4 {
+    font-size: 1.4rem;
+    color: var(--dark-blue);
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.support-card p {
+    color: var(--text-light);
+    line-height: 1.7;
+}
+
+.quick-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+.stat-box {
+    background: linear-gradient(135deg, var(--primary-color), var(--hover-color));
+    color: var(--white);
+    padding: 30px 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(243, 156, 18, 0.3);
+}
+
+.stat-box h3 {
+    font-size: 2.5rem;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.stat-box p {
+    font-size: 0.95rem;
+    opacity: 0.95;
+}
+
+.resource-categories {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.category-btn {
+    background: var(--light-gray);
+    border: 2px solid var(--border-color);
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    color: var(--text-dark);
+}
+
+.category-btn:hover,
+.category-btn.active {
+    background: var(--primary-color);
+    color: var(--white);
+    border-color: var(--primary-color);
+}
+
+.help-section {
+    background: linear-gradient(135deg, rgba(243, 156, 18, 0.05), rgba(243, 156, 18, 0.02));
+    padding: 50px 40px;
+    border-radius: 12px;
+    text-align: center;
+    border: 2px solid var(--primary-color);
+    margin-top: 50px;
+}
+
+.help-section h3 {
+    font-size: 2rem;
+    color: var(--dark-blue);
+    margin-bottom: 15px;
+}
+
+.help-section p {
+    color: var(--text-light);
+    margin-bottom: 25px;
+    line-height: 1.7;
+}
+
+.help-section .btn {
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 14px 30px;
+    border-radius: 8px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.help-section .btn:hover {
+    background: var(--hover-color);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 2.2rem;
+    }
+    
+    .page-subtitle {
+        font-size: 1rem;
+    }
+    
+    .resources-grid,
+    .online-resources-grid,
+    .support-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .calendar-header,
+    .calendar-row {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 15px 20px;
+    }
+    
+    .event-date {
+        font-size: 0.95rem;
+    }
+    
+    .quick-stats {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .page-header {
+        padding: 50px 20px 30px;
+    }
+    
+    .page-title {
+        font-size: 1.8rem;
+    }
+    
+    .resource-card,
+    .online-resource-card,
+    .support-card {
+        padding: 30px 20px;
+    }
+    
+    .resource-icon {
+        width: 70px;
+        height: 70px;
+        font-size: 2rem;
+    }
+    
+    .help-section {
+        padding: 35px 25px;
+    }
+}
