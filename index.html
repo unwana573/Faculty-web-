@@ -265,10 +265,10 @@
                     <div class="staff-avatar">
                         <i class="fas fa-user"></i>
                     </div>
-                    <h4>Prof. John Doe</h4>
+                    <h4>Dr. Cecelia Eberendu</h4>
                     <p class="staff-title">Dean, Faculty of Computing</p>
                     <p class="staff-dept">Faculty Administration</p>
-                    <p class="staff-specialty">Artificial Intelligence & Machine Learning</p>
+                    <p class="staff-specialty">Software Engineering specialist</p>
                     <button class="contact-btn"><i class="fas fa-envelope"></i> Contact</button>
                 </div>
 
@@ -276,10 +276,10 @@
                     <div class="staff-avatar">
                         <i class="fas fa-user"></i>
                     </div>
-                    <h4>Dr. Jane Smith</h4>
+                    <h4>Mr Ezenorom</h4>
                     <p class="staff-title">Head of Department</p>
                     <p class="staff-dept">Computer Science</p>
-                    <p class="staff-specialty">Data Science & Analytics</p>
+                    <p class="staff-specialty">Operations research specialist and Computer Scientist </p>
                     <button class="contact-btn"><i class="fas fa-envelope"></i> Contact</button>
                 </div>
 
@@ -287,21 +287,21 @@
                     <div class="staff-avatar">
                         <i class="fas fa-user"></i>
                     </div>
-                    <h4>Dr. Michael Johnson</h4>
-                    <p class="staff-title">Head of Department</p>
-                    <p class="staff-dept">Cyber Security</p>
-                    <p class="staff-specialty">Network Security & Cryptography</p>
-                    <button class="contact-btn"><i class="fas fa-envelope"></i> Contact</button>
-                </div>
-
-                <div class="staff-card">
-                    <div class="staff-avatar">
-                        <i class="fas fa-user"></i>
-                    </div>
-                    <h4>Dr. Sarah Williams</h4>
+                    <h4>Dr. Valentine Ikechukwu Udegbe</h4>
                     <p class="staff-title">Head of Department</p>
                     <p class="staff-dept">Software Engineering</p>
-                    <p class="staff-specialty">Software Architecture & DevOps</p>
+                    <p class="staff-specialty">Cloud Security specialist and Software Engineer</p>
+                    <button class="contact-btn"><i class="fas fa-envelope"></i> Contact</button>
+                </div>
+                
+                <div class="staff-card">
+                    <div class="staff-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h4>Mrs Chinonso</h4>
+                    <p class="staff-title">Head of Department</p>
+                    <p class="staff-dept">Cyber Security</p> 
+                    <p class="staff-specialty">Cybersecurity specialist </p>
                     <button class="contact-btn"><i class="fas fa-envelope"></i> Contact</button>
                 </div>
             </div>
@@ -435,10 +435,10 @@
                 <div class="contact-form">
                     <h3>Send a Message</h3>
                     <form id="contactForm">
-                        <input type="text" placeholder="Your Name" required>
-                        <input type="email" placeholder="Your Email" required>
-                        <input type="text" placeholder="Subject" required>
-                        <textarea rows="5" placeholder="Your Message" required></textarea>
+                        <input type="text" name="from_name" placeholder="Your Name" required>
+                        <input type="email" name="from_email" placeholder="Your Email" required>
+                        <input type="text" name="subject" placeholder="Subject" required>
+                        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
                         <button type="submit" class="btn btn-primary">
                             <i class="fas fa-paper-plane"></i> Send Message
                         </button>
@@ -521,6 +521,7 @@
         <i class="fas fa-arrow-up"></i>
     </button>
 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="/js/main.js"></script>
 </body>
 </html>
